@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+  }
+  .card-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  p {
+    margin: 0;
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    position: absolute;
+    color: white;
+    top: 18%;
+    margin-left: 15px;
+  }
+
+  i {
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    left: 78%;
+    transform: translateY(50%);
+  }
+
+  .card {
+    width: 15vw;
+    height: 8vh;
+    background-color: blueviolet;
+    position: relative;
+    transform: translateX(-70%);
+    transition: transform 0.8s ease-in-out;
+    box-shadow: 2px 2px 20px black;
+  }
+
+  .card:hover {
+    transform: translateX(0vw);
+  }
