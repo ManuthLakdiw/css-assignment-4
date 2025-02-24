@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+    background-color: azure;
+  }
+
+  .box {
+    position: absolute;
+    width: 16vw;
+    height: 7vw;
+    border-radius: 20px;
+    animation: go-around 6s alternate infinite ease-in-out;
+  }
+
+  /* animation-direction 
+  normal -> 0% to 100%
+  reverse -> 100% to 0%
+  alternate -> 0% to 100% to 0% (නොමල් දිශාවෙන් පටන් අරන් නැවත රිවර්ස් එක​ට ඇවිත් නවතිනවා)
+  alternate-reverse -> 100% to 0% (රිවර්ස් එකෙන් පටන් අරන් නැවත නොමල් එකට ඇවිත් නවතින​වා) */
+
+  @keyframes go-around {
+    0% {
+      top: 1%;
+      left: 0;
+      transform: rotate(0deg);
+      background-color: blue;
+    }
+    25% {
+      top: 1%;
+      left: calc(100% - 19vw);
+      transform: rotate(180deg);
+      background-color: yellow;
+    }
+    50% {
+      top: calc(100% - 9vw);
+      left: calc(100% - 19vw);
+      transform: rotate(360deg);
+      background-color: red;
+    }
+    75% {
+      top: calc(100% - 9vw);
+      left: 0;
+      transform: rotate(180deg);
+      background-color: hotpink;
+    }
+    100% {
+      top: 1%;
+      left: 0;
+      transform: rotate(360deg);
+      background-color: orange;
+    }
+  }
