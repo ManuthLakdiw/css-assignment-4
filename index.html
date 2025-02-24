@@ -4,6 +4,119 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>css-assignment-4</title>
+
+    <style>
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        overflow: hidden;
+        margin: 0;
+      }
+
+      h1 {
+        font-size: 4rem;
+        text-align: center;
+      }
+
+      .case-container {
+        width: 100vw;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .case {
+        width: 120px;
+        height: 120px;
+        background-color: aqua;
+        margin-right: 40px;
+        border-radius: 20px;
+        animation: pop-up 3s alternate infinite ease-in-out;
+        box-shadow: 0px 3px 15px black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .case p {
+        font-size: 1rem;
+        animation: increase-font 3s alternate infinite ease-in-out;
+        color: white;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      @keyframes increase-font {
+        0% {
+          font-size: 1rem;
+        }
+
+        100% {
+          font-size: 1.5rem;
+        }
+      }
+
+      @keyframes pop-up {
+        0% {
+          transform: scale(1);
+          background-color: red;
+        }
+
+        50% {
+          background-color: green;
+        }
+
+        100% {
+          transform: scale(1.2);
+          background-color: blue;
+        }
+      }
+    </style>
   </head>
-  <body></body>
+
+  <body>
+    <header>
+      <h1>Assignment-4</h1>
+
+      <div class="case-container">
+        <a href="/pages/case-1.html" target="_blank">
+          <div class="case case-1">
+            <p>case-1</p>
+          </div>
+        </a>
+
+        <a href="/pages/case-2.html" target="_blank">
+          <div class="case case-2">
+            <p>case-2</p>
+          </div>
+        </a>
+
+        <a href="/pages/case-3.html" target="_blank">
+          <div class="case case-3">
+            <p>case-3</p>
+          </div></a
+        >
+
+        <a href="/pages/case-4.html" target="_blank">
+          <div class="case case-4">
+            <p>case-4</p>
+          </div>
+        </a>
+
+        <a href="/pages/case-5.html" target="_blank">
+          <div class="case case-5">
+            <p>case-5</p>
+          </div>
+        </a>
+
+        <a href="/pages/case-6.html" target="_blank">
+          <div class="case case-6">
+            <p>case-6</p>
+          </div>
+        </a>
+      </div>
+    </header>
+  </body>
 </html>
